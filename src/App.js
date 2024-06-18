@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+const root = document.getElementById('root')
+const img = document.createElement('img')
+img.src = 'person.jpg' 
+const res = root.appendChild(img)
+res.style.width = '400px'
+document.body.appendChild(res)
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+const description = document.createElement('p')
+description.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias ad tenetur labore cum, molestiae hic rem, inventore earum quam facere adipisci quaerat error. Consequatur voluptate quo esse repellat ea.'
+description.style.width = '300px'
+document.body.appendChild(description)
